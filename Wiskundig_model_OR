@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # project 5 OR 
-all_sheets = pd.read_excel("PaintShop-September2024.xlsx", sheet_name=None)
+all_sheets = pd.read_excel("PaintShop - September 2024 (1)", sheet_name=None)
 print("Beschikbare sheets in het bestand:", list(all_sheets.keys()))
 Orders = all_sheets['Orders']
 Machines = all_sheets['Machines']
