@@ -100,8 +100,7 @@ def main():
     x1, y1 = coordinates[nn_tour[len(coordinates)-1]]
     x2, y2 = coordinates[nn_tour[0]]
     plt.plot([x1, x2], [y1, y2], 'b-')
-    plt.title(f'Solutions on {len(coordinates)} nodes; NN tour:
-    {total_distance_nn_tour:.2f}')
+    plt.title(f'Solutions on {len(coordinates)} nodes; NN tour: {total_distance_nn_tour:.2f}')
     plt.show()
 if __name__ == "__main__":
     main()
