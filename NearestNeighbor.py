@@ -111,3 +111,19 @@ while not available_orders.empty:
 # Output the scheduled orders
 for order, machine in scheduled_orders:
     print(f"Order {order['Order']} scheduled on {machine} with colour {order['Colour']}")
+
+
+
+## Discret Improving Search
+import logging
+logger = logging.getLogger(name='2opt-logger')
+logging.basicConfig(level=logging.INFO,
+                    format='[%(asctime)s] %(message)s',
+                    handlers=[logging.FileHandler("2opt.log")])
+
+def best_improvement(order, machine, scheduled_orders):
+    """ verbetert het gegeven schema
+    Parameters: 
+        dat weten we zelf ook nog niet
+    Output: aangepast schema waarbij er minder pentaltycosts zijn
+    """
